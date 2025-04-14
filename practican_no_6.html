@@ -1,0 +1,196 @@
+<html>
+<head>
+  <title>Practical no 6 Tribute page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #fffaf0, #f4e7d3);
+      color: #3a342f;
+      overflow-x: hidden;
+    }
+
+    header{
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      animation: fadeInHeader 2s ease-in-out;
+    }
+
+    header h1{
+      font-family: 'Playfair Display', serif;
+      font-size: 4em;
+      margin-bottom: 10px;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    header p {
+      font-size: 1.6em;
+      font-style: italic;
+      color: #f8f4ed;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: -100px auto 60px;
+      padding: 50px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 25px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+      animation: slideUp 1.5s ease-in-out;
+      position: relative;
+    }
+
+    .ribbon{
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      background: #c59d5f;
+      padding: 10px 25px;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px 10px 0 0;
+      font-size: 1em;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-container {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid #cbb89d;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+    }
+
+    .bio h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      color: #5e4b3c;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .bio p {
+      font-size: 1.2em;
+      text-align: justify;
+      margin-bottom: 20px;
+      line-height: 2;
+      color: #4a3e36;
+      position: relative;
+    }
+
+    .bio p::before {
+      content: '\201C';
+      font-size: 2em;
+      color: #d3bfa8;
+      position: absolute;
+      left: -20px;
+      top: -10px;
+    }
+
+    .bio p:last-child::before {
+      content: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #4a3b2d;
+      color: #fff5e9;
+      font-size: 1.1em;
+      border-top: 8px solid #a78b61;
+      letter-spacing: 1px;
+    }
+
+    footer span {
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      .image-container im{
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    @keyframes fadeInHeader{
+      from { opacity: 0; transform: translateY(-60px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp{
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h3>Shivam Ingale (CS24043)</h3>
+
+  <header>
+    <div>
+      <h1>In Loving Memory</h1>
+      <p>A Tribute to Bhagwanji Ingale — Our Great Grandfather & Village Hero</p>
+    </div>
+  </header>
+  
+
+  <div class="container">
+    <div class="ribbon">Great Grandfather</div>
+    <div class="image-container">
+      <img src="bhagwanji.png" alt="Great Grandfather">
+    </div>
+    <div class="bio">
+      <h2>Mr. Bhagwanji Ingale (1930 – 2005)</h2>
+      <p>
+        In loving memory of Bhagwanji Ingale, a pillar of strength, kindness, and wisdom in our family and our village. A man whose hands told stories of tireless work in the fields, and whose heart overflowed with generosity and compassion.
+      </p>
+      <p>
+        He was not just a great farmer, but a great human being — always ready to help, always thinking of others before himself. Whether it was a neighbor in need, a family facing hardship, or simply a kind word for a passerby, Bhagwanji Kaka stood as a symbol of goodness in our gaon.
+      </p>
+      <p>
+        His hard work fed many, his love united many, and his presence uplifted all who knew him. A sweet soul who believed in simplicity, honesty, and the strength of community. Even though he may no longer be with us in person, his values and legacy continue to grow—like the crops he once nurtured with so much care.
+      </p>
+      <p><strong>
+        We are proud to walk in his footsteps and carry forward the spirit of kindness, dedication, and love that he so beautifully lived by.
+      </strong></p>
+      <p><strong>May his soul rest in peace, and may his story continue to inspire us all.</strong></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; Tribute | <span>Created by Shivam Ingale 💛</span>
+  </footer>
+
+</body>
+</html>
